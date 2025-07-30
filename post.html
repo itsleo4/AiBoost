@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AiBoost Blog Post - [Your Post Title Here]</title>
+    <meta name="description" content="Detailed content of a blog post from AiBoost.">
+    <meta name="keywords" content="blog post, AI writing, content, AiBoost">
+    <meta name="author" content="AiBoost Team">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aiboost.com/post.html"> <!-- Update for each specific post -->
+    <meta property="og:title" content="AiBoost Blog Post - [Your Post Title Here]">
+    <meta property="og:description" content="Detailed content of a blog post from AiBoost.">
+    <meta property="og:image" content="https://www.aiboost.com/assets/images/hero.png"> <!-- Use specific post image -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.aiboost.com/post.html"> <!-- Update for each specific post -->
+    <meta property="twitter:title" content="AiBoost Blog Post - [Your Post Title Here]">
+    <meta property="twitter:description" content="Detailed content of a blog post from AiBoost.">
+    <meta property="twitter:image" content="https://www.aiboost.com/assets/images/hero.png"> <!-- Use specific post image -->
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles (optional, for minor tweaks) -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .highlight-link {
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            color: #4f46e5; /* Tailwind indigo-600 */
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-white min-h-screen flex flex-col">
+
+    <!-- Header - Consistent across all pages -->
+    <header class="absolute inset-x-0 top-0 z-50">
+        <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="index.html" class="-m-1.5 p-1.5 flex items-center gap-x-2">
+                    <span class="sr-only">AiBoost</span>
+                    <!-- SVG Brain Icon -->
+                    <svg class="h-8 w-8 text-indigo-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2zm-2-4h2v2h-2zm4 0h2v2h-2zm-2-4h2v2h-2zm0 8h2v2h-2z"/>
+                        <path fill="url(#gradient)" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2zm-2-4h2v2h-2zm4 0h2v2h-2zm-2-4h2v2h-2zm0 8h2v2h-2z"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#4F46E5" />
+                                <stop offset="100%" stop-color="#8B5CF6" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2zm-2-4h2v2h-2zm4 0h2v2h-2zm-2-4h2v2h-2zm0 8h2v2h-2z"/>
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2zm-2-4h2v2h-2zm4 0h2v2h-2zm-2-4h2v2h-2zm0 8h2v2h-2z" fill="url(#gradient)"/>
+                    </svg>
+                    <span class="text-2xl font-bold text-gray-900">AiBoost</span>
+                </a>
+            </div>
+            <div class="flex lg:gap-x-12">
+                <a href="index.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600">Home</a>
+                <a href="index.html#features" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600">Features</a>
+                <a href="pricing.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600">Pricing</a>
+                <a href="about.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600">About</a>
+                <a href="privacy.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600">Privacy</a>
+                <a href="terms.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600">Terms</a>
+                <a href="blog.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 highlight-link">Blog</a>
+                <a href="index.html#contact" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600">Contact</a>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="index.html#contact" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600">Get Started <span aria-hidden="true">&rarr;</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section for Blog Post -->
+        <section class="relative isolate overflow-hidden bg-gradient-to-br from-indigo-50 to-purple-100 pt-32 pb-24 text-center">
+            <div class="mx-auto max-w-4xl px-6 lg:px-8">
+                <p class="text-base font-semibold leading-7 text-indigo-600">Blog Post</p>
+                <h1 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Your Blog Post Title Goes Here</h1>
+                <p class="mt-6 text-lg leading-8 text-gray-600">A captivating subtitle or short summary of the post content.</p>
+                <div class="mt-8 flex items-center justify-center gap-x-4 text-sm">
+                    <div class="h-8 w-8 rounded-full bg-indigo-600 flex items-center justify-center text-white font-bold text-md">A</div>
+                    <p class="font-semibold text-gray-900">AiBoost Team</p>
+                    <span class="text-gray-500">•</span>
+                    <time datetime="2025-07-30" class="text-gray-500">July 30, 2025</time>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Post Content Section -->
+        <section class="py-24 sm:py-32 bg-white">
+            <div class="mx-auto max-w-3xl px-6 lg:px-8 prose prose-indigo">
+                <p>This is where the main content of your blog post will go. You can write several paragraphs, add images, lists, and other elements to provide detailed information to your readers.</p>
+
+                <p>For a static site, you would typically duplicate this `post.html` file for each individual blog post you want to publish. For example, you might create `mastering-prompts.html`, `workflow-hacks.html`, etc.</p>
+
+                <img class="w-full rounded-lg shadow-lg my-8" src="/assets/images/blog-ai-prompts.png" alt="Blog Post Main Image">
+
+                <h2>Subheading for More Detail</h2>
+                <p>You can use subheadings to break up your content and make it more readable. This section could delve deeper into a specific point mentioned in the introduction.</p>
+
+                <ul>
+                    <li>Point 1: Detail about a key takeaway.</li>
+                    <li>Point 2: Another important aspect to consider.</li>
+                    <li>Point 3: A practical tip or example.</li>
+                </ul>
+
+                <p>Remember to replace all this placeholder text with your actual blog post content. Ensure your images are correctly linked and sized for optimal display.</p>
+
+                <h3>Another Section Title</h3>
+                <p>The flexibility of HTML and Tailwind CSS allows you to structure your blog posts exactly how you need them. Feel free to add more sections, quotes, or code snippets as required.</p>
+
+                <p>Thank you for reading this sample blog post. We hope it provides a good starting point for your AiBoost blog!</p>
+
+                <div class="mt-12 text-center">
+                    <a href="blog.html" class="inline-flex items-center rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                        &larr; Back to Blog
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer - Consistent across all pages -->
+    <footer class="bg-white py-12 mt-auto">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="flex flex-col items-center justify-between gap-y-6 sm:flex-row">
+                <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm leading-6 text-gray-600">
+                    <a href="about.html" class="hover:text-gray-900">About</a>
+                    <a href="privacy.html" class="hover:text-gray-900">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-gray-900">Terms of Service</a>
+                    <a href="blog.html" class="hover:text-gray-900">Blog</a>
+                    <a href="index.html#contact" class="hover:text-gray-900">Contact</a>
+                </div>
+                <p class="text-sm leading-6 text-gray-500">&copy; 2025 AiBoost. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+AiBoost Landing Page Template License
+
+Copyright (c) 2025 [Nitin Kumar]
+
+This license outlines the terms and conditions for the use of the AiBoost Landing Page Template.
+
+You are allowed to:
+* Use the template for both personal and commercial projects.
+* Modify the code and design of the template to suit your needs.
+* Incorporate the template into projects for your clients.
+
+You are NOT allowed to:
+* Resell or redistribute the template, either as-is or with minor modifications.
+* Use the template to create directly competing templates or similar products.
+* Share the template publicly on platforms like GitHub, template marketplaces, or any other public distribution channels.
+
+Disclaimer:
+This template is provided "as-is" with no warranty, express or implied. The creators are not liable for any damages or issues arising from its use.
